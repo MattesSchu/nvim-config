@@ -46,17 +46,20 @@ return require('packer').startup(function(use)
     
     -- DAP
     use { 'mfussenegger/nvim-dap' }
-    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap"} }
+    use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} }
+
     -- Linter
     use { 'mfussenegger/nvim-lint' }
+
     -- Formatter
     use { 'mhartington/formatter.nvim' }
 
-    use { 'williamboman/mason.nvim' }
-    use { 'williamboman/mason-lspconfig.nvim'}
-    
     -- theme
     use { 'folke/tokyonight.nvim' }
+
+    -- Mason
+    use { 'williamboman/mason.nvim' }
+    use { 'williamboman/mason-lspconfig.nvim'}
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
