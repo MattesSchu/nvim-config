@@ -43,7 +43,7 @@ return require('packer').startup(function(use)
     use { 'hrsh7th/cmp-cmdline', after = 'nvim-cmp' }       -- cmdline auto-completion
     use { 'L3MON4D3/LuaSnip' }
     use { 'saadparwaiz1/cmp_luasnip' }
-    
+
     -- DAP
     use { 'mfussenegger/nvim-dap' }
     use { "rcarriga/nvim-dap-ui", requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"} }
@@ -60,6 +60,12 @@ return require('packer').startup(function(use)
     -- Mason
     use { 'williamboman/mason.nvim' }
     use { 'williamboman/mason-lspconfig.nvim'}
+
+    --- nvim-tree
+    use { 'nvim-tree/nvim-tree.lua' }
+
+    -- icons
+    use 'nvim-tree/nvim-web-devicons'
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
