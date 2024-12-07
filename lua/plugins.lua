@@ -36,8 +36,8 @@ return require('packer').startup(function(use)
     -- NOTE: PUT YOUR THIRD PLUGIN HERE --
     ---------------------------------------
     use { 'neovim/nvim-lspconfig' }
-    use { 'hrsh7th/nvim-cmp', config = [[require('config.nvim-cmp')]] }    
-    use { 'hrsh7th/cmp-nvim-lsp', after = 'nvim-cmp' } 
+    use { 'hrsh7th/nvim-cmp', config = [[require('config.nvim-cmp')]] }
+    use { 'hrsh7th/cmp-nvim-lsp', after = 'nvim-cmp' }
     use { 'hrsh7th/cmp-buffer', after = 'nvim-cmp' }        -- buffer auto-completion
     use { 'hrsh7th/cmp-path', after = 'nvim-cmp' }          -- path auto-completion
     use { 'hrsh7th/cmp-cmdline', after = 'nvim-cmp' }       -- cmdline auto-completion
@@ -65,7 +65,13 @@ return require('packer').startup(function(use)
     use { 'nvim-tree/nvim-tree.lua' }
 
     -- icons
-    use 'nvim-tree/nvim-web-devicons'
+    use { 'nvim-tree/nvim-web-devicons' }
+
+    -- feline
+    use { 'feline-nvim/feline.nvim' }
+
+    -- dashboard
+    use { 'nvimdev/dashboard-nvim' }
 
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
